@@ -1,0 +1,8 @@
+<nav class="main-nav">
+  {% assign navigation_pages = site.html_pages | sort: 'weight' %}
+  {% for p in navigation_pages %}
+  {% if p.weight %}
+  <a href="{{ site.baseurl }}/{{ p.url }}" {% if p.url == page.url %}class="active" {% endif %}>{{ p.title }}</a>
+  {% endif %}
+  {% endfor %}
+</nav>

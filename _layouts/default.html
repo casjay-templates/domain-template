@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+    <head>
+        {% if site.custom_theme.name == "bootstrap-dark" %}
+        {% include themes/bootstrap-dark/meta.html %}
+
+        {% elsif site.custom_theme.name == "hacker" %}
+        {% include themes/hacker/meta.html %}
+
+        {% elsif site.custom_theme.name == "flat" %}
+        {% include themes/flat/meta.html %}
+
+        {% else %}
+        {% include themes/hacker/meta.html %}
+        {% endif %}
+    </head>
+
+    <body>
+        <div class="">
+        {% if site.custom_theme.name == "bootstrap-dark" %}
+        {% include themes/bootstrap-dark/layouts/default.html %}
+
+        {% elsif site.custom_theme.name == "hacker" %}
+        {% include themes/hacker/layouts/default.html %}
+
+        {% elsif site.custom_theme.name == "flat" %}
+        {% include themes/flat/layouts/default.html %}
+
+        {% else %}
+        {% include themes/hacker/layouts/default.html %}
+        {% endif %}
+
+        {% if site.github.forkme == true %}
+        <a class="github-fork-ribbon" href="{{ site.github.repository_url }}/fork" data-ribbon="Fork me on GitHub"
+        title="Fork me on GitHub">Fork me on GitHub </a>
+        {% endif %}
+        <div class="container">
+            <div align="center">
+                {% include {{ site.custom_theme.footer }} %}
+            </div>
+        </div>
+    </body>
+
+</html>

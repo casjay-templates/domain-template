@@ -1,0 +1,200 @@
+# This file contains configuration flags to customize your site
+
+# Name of your site (displayed in the header)
+name: jekyll-casjaysdev
+
+# Short bio or description (displayed in the header)
+description: "Jekyll theme for casjaysdev"
+
+# site tagline
+tagline: "Serve it!"
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: "https://avatars2.githubusercontent.com/u/43266386?s=200&v=4"
+
+# full domain name IE: httmp://mysite.com
+url:
+
+# full URI IE: /mysite
+baseurl: /jekyll-site
+
+# set url for the contact form
+form:
+  submit_url: https://formspree.io/xknqkpjo
+
+# Show the top nav bar
+show_topnav: true
+
+# set site author
+author:
+  name: casjaysdev
+  url: http://casjay.net
+
+# show directory listing
+show_dir_listing: false
+
+# set default timezone
+timezone: America/New_York
+
+# set locale
+locale: "en"
+
+# Seperator for the the excerps
+excerpt_separator: "\n\n"
+
+# Set social media urls
+share-this:
+  code: 5acc08103368f4001495b647
+  rss: /rss
+  repo: https://github.com/casjay-themes/jekyll-casjaysdev
+  email:
+  enabled:
+    footer: true
+    script: true
+
+# Includes an icon in the footer for each username you enter
+social-links:
+  rss: /rss
+  github: casjay-themes
+  twitter: casjaysdev
+  facebook:
+  flickr:
+  instagram:
+  linkedin:
+  pinterest:
+  dribbble:
+  email:
+
+# Social links
+social:
+  name: casjaysdev
+  links:
+    - https://twitter.com/casjaysdev
+    - https://www.facebook.com/casjaysdev
+    - https://www.linkedin.com/in/casjaysdev
+    - https://github.com/casjaysdev
+    - https://keybase.io/casjaysdev
+
+# Verfication Settings
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+
+# github options
+github:
+  show: true
+  repo:
+  user:
+  avatar:
+  forkme: true
+
+# Enable/Disable footer sections
+options:
+  sharethis: true
+  legal: true
+  statcounter: true
+  google: true
+  ads: true
+  eucookie: true
+  rocketchat: true
+  piwik: true
+  navigation:
+    weighted: true
+    nonweighted:
+
+feed:
+  path: /rss
+
+# You can find your shortname on the Settings page of your Disqus account
+disqus:
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google:
+  analytics: UA-936146-1
+
+# piwik code
+piwik:
+  pre: https
+  id:
+  url:
+
+rocketchat:
+  url:
+
+statuscounter:
+  id: 8585230
+  code: ef07ac24
+  url: //c.statcounter.com/8585230/0/ef07ac24/0/
+
+# Name of theme
+#theme: jekyll-theme-slate
+#remote_theme: casjay-templates/jekyll-site
+
+# only set one of columns_ to enabled
+# set a custom theme - includes/themes
+# bootstrap-dark, hacker, flat
+custom_theme:
+  name: bootstrap-dark
+  css_dir: css
+  columns: "2"
+  footer: casjays-footer.html
+  header: casjays-header.html
+
+# You don't need to change any of the configuration flags below !!
+permalink: pretty
+paginate: 5
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _sass
+  style: :expanded
+
+collections:
+  posts:
+    output: true
+
+# Use the following plug-ins
+gems:
+  - jemoji
+  - kramdown
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-assets
+  - jekyll-sitemap
+  - jekyll-analytics
+  - jekyll-remote-include
+  - jekyll-menus
+  - jekyll-remote-theme
+  - jekyll-paginate
+
+include:
+  - _pages
+  - images
+  
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - .keep
+
+#webrick:
+#  headers:
+#    Access-Control-Allow-Origin: "*"

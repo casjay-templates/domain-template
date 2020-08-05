@@ -1,0 +1,73 @@
+    <table>
+      <tr>
+        <td width="300" height="200" class="pl-5">
+          <p align="center"><a href="{{ site.github.repository_url }}"><img src="{{ site.avatar }}" border="0"
+                width="159" height="157"></p>
+        </td>
+        <td width="50%" height="200">
+          <header>
+            <div class="container">
+              <h1 align="center">{{ site.title | default: site.github.repository_name }}</h1>
+              <h2 align="center">{{ site.description | default: site.github.project_tagline }}</h2>
+              {% if site.show_topnav %}<h4 align="center">{% include navigation.html %}</h4>{% endif %}
+            </div>
+        </td>
+        </header>
+
+        <td width="300" height="200" class="pl-5" align="center">
+              {% if site.github.show %}
+              GitHub REPO Links:<br>
+              <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a><br>
+              <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a><br>
+              <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a><br>
+              {% endif %}
+        </td>
+      </tr>
+    </table>
+
+
+
+    {% if site.custom_theme.columns == "1" %}
+
+    <div class="flex">
+      {{ content }}
+    </div>
+
+    {% elsif site.custom_theme.columns == "2" %}
+    <div class="flex-fluid">
+      <div class="row">
+        <div class="col-md-3" text-align="left">
+          {% include themes/hacker/sidebars/left.html %}
+        </div>
+        <div class="col-md-6 justify-content-md-center">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    {% elsif site.custom_theme.columns == "3" %}
+
+    <div class="flex-fluid">
+      <div class="row ">
+        <div class="col-md-3 pl-5 sidenav-right" align="right">
+          {% include themes/hacker/sidebars/left.html %}
+        </div>
+        <div class="col-md-6 justify-content-md-center">
+          {{ content }}
+        </div>
+        <div class="col-md-3">
+          <div class="sidenav pl-5 text-center" align="left">
+            {% include themes/hacker/sidebars/right.html %}</div>
+        </div>
+      </div>
+    </div>
+
+    {% else %}
+    <h1 align="center" class="container content justify-content-left text-center">
+      custom_theme/columns not set in _config.yml <br>
+      Your theme settings in _config.yml are incorrect <br>
+      Current columns: {{ site.custom_theme.columns }}
+    </h1>
+    {% endif %}
+
+    </div>

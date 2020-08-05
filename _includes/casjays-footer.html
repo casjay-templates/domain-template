@@ -1,0 +1,61 @@
+<!-- Begin Footer -->
+<div id="footer" class="footer" align="center">
+<br><br><br><br><br><br><br>
+
+<!-- Social Links -->
+{% if site.options.sharethis == true %}
+  {% include casjaysdev/sharethis.html %}
+{% endif %}
+<!-- End Social Links-->
+<br><br>
+
+<!-- Begin Casjays Developments Footer -->
+{% if site.options.legal == true %}
+  {% include casjaysdev/legal.html %}
+{% endif %}
+<!-- End Casjays Developments Footer -->
+
+<!--Begin Statcounter Code -->
+{% if site.options.statcounter == true %}
+  {% include casjaysdev/statcounter.html %}
+{% endif %}
+<!-- End Statcounter Code -->
+<br><br>
+
+<!-- Begin Google Track -->
+{% if site.options.google == true %}
+  {% include casjaysdev/google.html %}
+{% endif %}
+<!-- Eng Google Track -->
+<br><br>
+
+<!--Begin ads Code -->
+{% if site.options.ads == true %}
+  {% include casjaysdev/ads.html %}
+{% endif %}
+<!-- End ads Code -->
+<br><br>
+
+<!-- Begin EU compliant -->
+{% if site.options.eucookie == true %}
+  {% include casjaysdev/eucookie.html %}
+{% endif %}
+<!-- End EU compliant -->
+<br><br>
+
+<!-- Start of Rocket.Chat Livechat Script -->
+{% if site.options.rocketchat == true %}
+  {% include casjaysdev/rocketchat.html %}
+{% endif %}
+<!-- End of Rocket.Chat Livechat Script -->
+<br><br>
+
+<!-- Begin Piwik Tracking Code -->
+{% if site.options.piwik == true %}
+  {% include casjaysdev/piwik.html %}
+{% endif %}
+<!-- End Piwik Tracking Code -->
+<br><br>
+
+</div>
+<!-- End Footer -->

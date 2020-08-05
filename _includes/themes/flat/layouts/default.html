@@ -1,0 +1,44 @@
+
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <a href="{{ site.baseurl }}" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+      <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <a href="{{ site.github.repository_url }}" class="site-description" target="_blank">{{ site.description }}</a>
+      </div>
+      {% if site.show_topnav == true %}
+      <nav>
+        {% include themes/flat/navigation.html %}
+      </nav>
+      {% endif %}
+  </header>
+  </div>
+</div>
+
+{% if site.custom_theme.columns == "1" %}
+<div id="main" role="main" class="container">
+  {{ content }}
+</div>
+
+{% elsif site.custom_theme.columns == "2" %}
+<div class="container">
+  {{ content }}
+</div>
+
+{% elsif site.custom_theme.columns == "3" %}
+<div class="container">
+  {{ content }}
+</div>
+
+{% else %}
+<h1 align="center" id="main" role="main" class="container">
+  custom_theme/columns not set in _config.yml <br>
+  Your theme settings in _config.yml are incorrect <br>
+  Current columns: {{ site.custom_theme.columns }}
+</h1>
+{% endif %}
+</div>
+
+<br /> <br />

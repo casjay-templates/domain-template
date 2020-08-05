@@ -1,0 +1,10 @@
+<nav class="main-nav">
+    <ul>
+        {% assign doclist = site.data.nav-external | sort: 'title'  %}
+        <ol>
+            {% for item in doclist %}
+            <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ol>
+    </ul>
+</nav>
