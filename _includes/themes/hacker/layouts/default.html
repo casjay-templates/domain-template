@@ -1,4 +1,4 @@
-<div class="container-fluid align-items-center text-center align-middle">
+<div class="container align-items-center text-center align-middle">
   <div class="row custom-body">
     <div class="col-lg-3 float-none">
       <a href="{{ site.baseurl }}"
@@ -33,14 +33,14 @@
 
   <br />
   {% if site.custom_theme.columns == "1" %}
-  <div class="container-fluid">
+  <div class="container">
     <div class="row float-none align-items-center text-center align-middle">
       <div class="col">{{ content }}</div>
     </div>
   </div>
 
   {% elsif site.custom_theme.columns == "2" %}
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-lg-3 float-none"></div>
       <div class="col-lg-6">{{ content }}</div>
@@ -50,7 +50,7 @@
     </div>
 
     {% elsif site.custom_theme.columns == "3" %}
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-lg-3 float-none">
           {% include {{ site.custom_theme.nav.left }} %}
@@ -63,7 +63,7 @@
     </div>
 
     {% else %}
-    <div class="container-fluid text-center align-middle col-md-6">
+    <div class="container text-center align-middle col-md-6">
       <h1 class="row">
         custom_theme/columns not set in _config.yml <br />
         Your theme settings in _config.yml are incorrect <br />
