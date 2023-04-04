@@ -1,7 +1,9 @@
 <div class="container-fluid align-items-center text-center align-middle">
   <div class="row custom-body">
     <div class="col-lg-3 float-none">
-      <a href="{{ site.baseurl }}"><img src="{{ site.avatar }}" border="2" /></a>
+      <a href="{{ site.baseurl }}"
+        ><img src="{{ site.avatar }}" border="2"
+      /></a>
     </div>
     <div class="col-lg-6">
       <span>
@@ -13,18 +15,14 @@
       {% if site.custom_theme.nav.bar == true %}
       <nav>
         <br />
-        <h4>
-          {% include {{ site.custom_theme.nav.top }} %}
-        </h4>
+        <h4>{% include {{ site.custom_theme.nav.top }} %}</h4>
       </nav>
       {% endif %}
     </div>
     {% if site.github.show %}
-    <div class="col-lg-3 float-none mt-3">
-      {% include github.html %}
-    </div>
+    <div class="col-lg-3 float-none mt-3">{% include github.html %}</div>
     {% endif %}
-    <hr style="width:50%" />
+    <hr style="width: 50%" />
   </div>
 
   <br />
@@ -38,8 +36,7 @@
   {% elsif site.custom_theme.columns == "2" %}
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3 float-none">
-      </div>
+      <div class="col-lg-3 float-none"></div>
       <div class="col-lg-6">{{ content }}</div>
       <div class="col-lg-3 float-none">
         {% include {{ site.custom_theme.nav.right }} %}
@@ -52,14 +49,12 @@
         <div class="col-lg-3 float-none">
           {% include {{ site.custom_theme.nav.left }} %}
         </div>
-        <div class="col-lg-6">
-          {{ content }}
-        </div>
+        <div class="col-lg-6">{{ content }}</div>
         <div class="col-lg-3 float-none">
-          {% include {{ site.custom_theme.nav.right }} %}</div>
+          {% include {{ site.custom_theme.nav.right }} %}
+        </div>
       </div>
     </div>
-
 
     {% else %}
     <div class="container-fluid text-center align-middle col-md-6">
@@ -71,3 +66,4 @@
     </div>
     {% endif %}
   </div>
+</div>
