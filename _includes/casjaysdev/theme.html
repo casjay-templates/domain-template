@@ -1,4 +1,4 @@
-{% if site.options.engine.enabled == true %}
+{% if site.options.engine == true %}
 <div class="text-center" style="color: royalblue">
   <br />
   Made with 💜💜💜💜💜💜 by <br />
@@ -6,7 +6,9 @@
     Jason M. Hempstead (Casjay)</a
   ><br />
   This site is powered by an
-  <a href="{{ site.options.engine.url }}" target="_blank"> open source </a>theme
+  <a href="{{ site.engine.url }}" target="_blank" rel="noopener">
+    open source </a
+  >theme
 </div>
 <br />
 {% endif %}
