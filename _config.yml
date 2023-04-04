@@ -121,17 +121,19 @@ webmaster_verifications:
 
 # Enable/Disable footer sections
 options:
-  engine: true
-  sharethis: true
-  legal: true
-  statcounter: true
-  google: true
   ads: true
-  eucookie: true
-  rocketchat: true
-  piwik: true
-  discord: true
+  blog: true
+  legal: true
   clock: true
+  piwik: true
+  engine: true
+  google: true
+  discord: true
+  eucookie: true
+  sharethis: true
+  rocketchat: true
+  statcounter: true
+  last_updated: true
 
 # theme footer link
 engine:
