@@ -64,9 +64,7 @@ form:
       vlink_color: "#ffffff"
       alink_color: "#ffffff"
 
-# only set one of columns_ to enabled
-# set a custom theme - includes/themes
-# hacker
+# only set one of columns t: set a custom theme - includes/themes
 custom_theme:
   name: hacker
   columns: "3"
@@ -77,8 +75,8 @@ custom_theme:
     external: true
     internal: true
     top: "nav/top.html"
-    right: "nav/sidebars/right.html"
     left: "nav/sidebars/left.html"
+    right: "nav/sidebars/right.html"
 
 # set default timezone
 timezone: America/New_York
