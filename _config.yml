@@ -64,6 +64,9 @@ form:
       vlink_color: "#ffffff"
       alink_color: "#ffffff"
 
+# Name of theme
+theme: hacker
+
 # only set one of columns_ to enabled
 # set a custom theme - includes/themes
 # hacker
@@ -88,9 +91,6 @@ locale: "en"
 
 # Seperator for the the excerps
 excerpt_separator: "\n\n"
-
-# Name of theme
-theme: hacker
 
 # Set social media urls
 share-this:
@@ -184,6 +184,7 @@ piwik:
   site_id:
   url:
 
+# enable rocketchat
 rocketchat:
   url:
 
@@ -299,10 +300,6 @@ exclude:
   - CNAME
   - .keep
   - .gitkeep
-  - _pages/about
-  - _pages/blog
-  - _pages/contact
-  - _pages/gallery
 
 # Change output to _docs
 destination: ./_site
