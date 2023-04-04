@@ -148,6 +148,10 @@ feed:
   path: /rss.xml
   posts_limit: 20
 
+# eu cookie
+eucookie:
+  enabled: true
+
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
   enabled: true
@@ -164,8 +168,11 @@ google:
 
 # Ads
 ads:
-  url:
-  code:
+  enabled: false
+  google:
+    format: auto
+    slot:
+    client:
 
 # piwik code
 piwik:
@@ -211,12 +218,12 @@ collections:
   issues:
     output: true
     permalink: /issues/:name
-  wiki:
-    output: true
-    permalink: /wiki/:name
   recipes:
     output: true
     permalink: /recipes/:name
+  wiki:
+    output: true
+    permalink: /wiki/:name
 
 redirect_from:
 json: true
@@ -241,9 +248,9 @@ defaults:
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
-  footnote_backlink: "&#x21A9;&#xFE0E;"
   input: GFM
   syntax_highlighter: rouge
+  footnote_backlink: "&#x21A9;&#xFE0E;"
   syntax_highlighter_opts:
     css_class: "highlight"
 
@@ -295,6 +302,8 @@ exclude:
 
 # Change output to _docs
 destination: ./_site
-#webrick:
-#  headers:
-#    Access-Control-Allow-Origin: "*"
+
+# webrick options
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
