@@ -1,4 +1,4 @@
-{% site.ads.enabled == true %} {% if site.ads.google.client &&
+{% if site.ads.enabled == true %} {% if site.ads.google.client &&
 site.ads.google.slot %}
 <script
   async
@@ -17,6 +17,7 @@ site.ads.google.slot %}
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <br />
-{% else %}
+{% endif %} {% else %}
 <!-- Ads is disabled -->
+
 {% endif %}

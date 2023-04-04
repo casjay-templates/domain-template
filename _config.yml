@@ -138,9 +138,13 @@ options:
   discord: true
   clock: true
 
+# theme footer link
+engine:
+  url: https://github.com/casjay-templates/jekyll-site
+
 # Blog settings
 blog:
-  enabled: false
+  enabled: true
   api:
 
 # RSS Feed
