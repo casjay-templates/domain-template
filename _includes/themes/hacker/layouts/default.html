@@ -1,33 +1,35 @@
 <div class="container-fluid text-center align-items-center align-middle">
-  <div class="row">
-    <div class="col-med-3">
-      <a href="{{ site.baseurl }}"
-        ><img src="{{ site.avatar }}" border="2"
-      /></a>
+  <div class="head">
+    <div class="row">
+      <div class="col-med-3">
+        <a href="{{ site.baseurl }}"
+          ><img src="{{ site.avatar }}" border="2"
+        /></a>
+      </div>
+      <div class="col-med-3 text-center align-items-center">
+        <span>
+          <h1 class="text-center align-items-center">.// {{ site.name }}</h1>
+          <h2 class="text-center align-items-center">{{ site.description }}</h2>
+          <h5 class="text-center align-items-center">{{ site.tagline }}</h5>
+        </span>
+        {% if site.custom_theme.nav.bar == true %}
+        <nav>
+          <br />
+          <h4>{% include {{ site.custom_theme.nav.top }} %}</h4>
+          <br />
+        </nav>
+        {% endif %} {% if site.github.show %}
+        <div class="col-med-3 mt-3">{% include github.html %}</div>
+        {% endif %}
+      </div>
+      <hr
+        style="
+          width: 50%;
+          margin-left: 25% !important;
+          margin-right: 25% !important;
+        "
+      />
     </div>
-    <div class="col-med-3 text-center align-items-center">
-      <span>
-        <h1 class="text-center align-items-center">.// {{ site.name }}</h1>
-        <h2 class="text-center align-items-center">{{ site.description }}</h2>
-        <h5 class="text-center align-items-center">{{ site.tagline }}</h5>
-      </span>
-      {% if site.custom_theme.nav.bar == true %}
-      <nav>
-        <br />
-        <h4>{% include {{ site.custom_theme.nav.top }} %}</h4>
-        <br />
-      </nav>
-      {% endif %} {% if site.github.show %}
-      <div class="col-med-3 mt-3">{% include github.html %}</div>
-      {% endif %}
-    </div>
-    <hr
-      style="
-        width: 50%;
-        margin-left: 25% !important;
-        margin-right: 25% !important;
-      "
-    />
   </div>
 
   <br />
