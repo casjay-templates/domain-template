@@ -22,7 +22,7 @@ author:
   site: http://casjay.net
 
 # set gallery image url
-gallery: 
+gallery:
   enabled: false
   folder: "/images/gallery"
 
@@ -57,7 +57,7 @@ form:
       message: "Message"
       required: "Name,Email,Message"
     theme:
-      background: "https://static.casjay.net/assets/images/bkg.png"
+      background: "https://casjaysdev-sites.github.io/static.casjay.net/assets/images/bkg.png"
       bgcolor: "#000000"
       text_color: "#ffffff"
       link_color: "#ffffff"
@@ -138,7 +138,7 @@ options:
   discord: true
   clock: true
 
-# Blog settings 
+# Blog settings
 blog:
   enabled: false
   api:
@@ -154,7 +154,7 @@ disqus:
   shortcode: casjay
 
 # clock settings
-clock: 
+clock:
   enabled: true
   url: "https://freesecure.timeanddate.com/clock/i7k2kmtc/n12/fn6/fs16/fc9ff/tc000/ftb/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4"
 
@@ -164,13 +164,13 @@ google:
 
 # Ads
 ads:
-  url: 
-  code: 
+  url:
+  code:
 
 # piwik code
 piwik:
-  site_id:
   prefix: https
+  site_id:
   url:
 
 rocketchat:
@@ -250,7 +250,7 @@ kramdown:
 # Set the Sass partials directory, as we're using @imports
 sass:
   sass_dir: _sass
-  style: :expanded
+  style: expanded
 
 jekyll_tidy:
   compress_html: true
@@ -293,9 +293,8 @@ exclude:
   - _pages/contact
   - _pages/gallery
 
-# Change outpud to _docs
+# Change output to _docs
 destination: ./_site
-
 #webrick:
 #  headers:
 #    Access-Control-Allow-Origin: "*"
