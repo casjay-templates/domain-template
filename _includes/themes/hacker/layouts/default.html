@@ -38,15 +38,19 @@
 
   {% elsif site.custom_theme.columns == "2" %}
   <div class="row">
-    <div class="col-3"></div>
-    <div class="col-6">{{ content }}</div>
-    <div class="col-3">{% include {{ site.custom_theme.nav.right }} %}</div>
+    <div class="col-med-3"></div>
+    <div class="col-med-6">{{ content }}</div>
+    <div class="col-med-3">{% include {{ site.custom_theme.nav.right }} %}</div>
 
     {% elsif site.custom_theme.columns == "3" %}
     <div class="row">
-      <div class="col-3">{% include {{ site.custom_theme.nav.left }} %}</div>
-      <div class="col-6">{{ content }}</div>
-      <div class="col-3">{% include {{ site.custom_theme.nav.right }} %}</div>
+      <div class="col-med-3">
+        {% include {{ site.custom_theme.nav.left }} %}
+      </div>
+      <div class="col-med-6">{{ content }}</div>
+      <div class="col-med-3">
+        {% include {{ site.custom_theme.nav.right }} %}
+      </div>
     </div>
 
     {% else %}
