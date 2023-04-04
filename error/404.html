@@ -7,11 +7,15 @@ title: Ummm You did that wrong!
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/assets/css/errorpages/errorpages.css"
+    />
     {% include casjays-header.html %} {% if site.custom_theme.name %} {% include
     themes/{{ site.custom_theme.name }}/meta.html %} {% endif %}
   </head>
 
-  <div class="container" onload="javascript:loadDomain();">
+  <div class="container">
     <h1>
       <i class="fa fa-frown-o red"></i
       ><a
@@ -25,19 +29,9 @@ title: Ummm You did that wrong!
       We apologize but we can't seem to be able to find what you're looking
       for!<br />
     </p>
-    <h3>
-      <a
-        href="{{ site.baseurl }}/"
-        class="btn btn-outline-danger btn-lg btn-danger"
-        >Return Home</a
-      >
-    </h3>
     <div class="container">
       <div class="body-content">
-        <img
-          alt="error"
-          src="https://github.com/casjaysdev-sites/static.casjay.net/raw/main/default-icons/errors/404.gif"
-        /><br />
+        <img alt="error" src="{{ site.baseurl }}/assets/images/404.gif" /><br />
       </div>
     </div>
     <a onclick="javascript:homepage();" class="btn btn-lg btn-success"

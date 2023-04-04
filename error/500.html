@@ -7,6 +7,10 @@ title: OhOh Server error!
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/assets/css/errorpages/errorpages.css"
+    />
     {% include casjays-header.html %} {% if site.custom_theme.name %} {% include
     themes/{{ site.custom_theme.name }}/meta.html %} {% endif %}
   </head>
@@ -25,19 +29,9 @@ title: OhOh Server error!
     <p class="lead">
       The web server is returning an internal error! Something is broken!!<br />
     </p>
-    <h3>
-      <a
-        href="{{ site.baseurl }}/"
-        class="btn btn-outline-danger btn-lg btn-danger"
-        >Return Home</a
-      >
-    </h3>
     <div class="container">
       <div class="body-content">
-        <img
-          alt="error"
-          src="https://github.com/casjaysdev-sites/static.casjay.net/raw/main/default-icons/errors/404.gif"
-        /><br />
+        <img alt="error" src="{{ site.baseurl }}/assets/images/404.gif" /><br />
       </div>
     </div>
     <a onclick="javascript:homepage();" class="btn btn-lg btn-success"

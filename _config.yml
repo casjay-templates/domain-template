@@ -90,7 +90,7 @@ locale: "en"
 excerpt_separator: "\n\n"
 
 # Name of theme
-theme:
+theme: hacker
 
 # Set social media urls
 share-this:
