@@ -64,9 +64,6 @@ form:
       vlink_color: "#ffffff"
       alink_color: "#ffffff"
 
-# Name of theme
-theme: hacker
-
 # only set one of columns_ to enabled
 # set a custom theme - includes/themes
 # hacker
