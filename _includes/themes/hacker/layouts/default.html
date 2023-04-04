@@ -1,11 +1,11 @@
 <div class="container-fluid text-center align-items-center align-middle">
   <div class="row">
-    <div class="col-3">
+    <div class="col-med-3">
       <a href="{{ site.baseurl }}"
         ><img src="{{ site.avatar }}" border="2"
       /></a>
     </div>
-    <div class="col text-center align-items-center">
+    <div class="col-med-3 text-center align-items-center">
       <span>
         <h1 class="text-center align-items-center">.// {{ site.name }}</h1>
         <h2 class="text-center align-items-center">{{ site.description }}</h2>
@@ -18,7 +18,7 @@
         <br />
       </nav>
       {% endif %} {% if site.github.show %}
-      <div class="col-3 mt-3">{% include github.html %}</div>
+      <div class="col-med-3 mt-3">{% include github.html %}</div>
       {% endif %}
     </div>
     <hr
