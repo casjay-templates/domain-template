@@ -6,7 +6,10 @@ weight: 4
 enabled:
 ---
 
-{% if site.gallery.enabled == true %} {% include image-gallery.html
-folder="/images/gallery" %} {% else %}
-<!-- Gallery is disabled -->
+{% if site.gallery.enabled == true %}
+<div>
+  {% include image-gallery.htm folder="/images/gallery" %}
+  <!-- Gallery is disabled -->
+  {% else %}
+</div>
 {% endif %}

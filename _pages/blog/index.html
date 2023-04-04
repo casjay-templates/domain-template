@@ -6,15 +6,14 @@ description: Blog Posts
 weight: 99
 ---
 
+{% if site.blog.enabled == true %} {% for post in site.posts %} {% if
+post.author %} {% assign blog_author = post.author %} {% elsif site.author.name
+%} {% assign blog_author = site.author.name %} {% endif %} {% if post.site %} {%
+assign author_site = post.site %} {% elsif site.author.site %} {% assign
+author_site = site.author.site %} {% else %} {% assign author_site = blog_author
+| prepend: 'http://github.com/' %} {% endif %}
 <div class="row">
-  {% if site.blog.enabled == true %} {% for post in site.posts %} {% if
-  post.author %} {% assign blog_author = post.author %} {% elsif
-  site.author.name %} {% assign blog_author = site.author.name %} {% endif %} {%
-  if post.site %} {% assign author_site = post.site %} {% elsif site.author.site
-  %} {% assign author_site = site.author.site %} {% else %} {% assign
-  author_site = blog_author | prepend: 'http://github.com/' %} {% endif %}
-
-  <div class="col-med-3 col-sm-12">
+  <div class="col-med-3">
     <div class="card border-success mb-3 vh-20">
       <div class="card-header bg-transparent border-success">
         <a
@@ -51,7 +50,8 @@ weight: 99
       </div>
     </div>
   </div>
-  {% endfor %} {% else %}
+  {% endfor %}
   <!-- Blog is disabled -->
-  {% endif %}
+  {% else %}
 </div>
+{% endif %}

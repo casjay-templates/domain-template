@@ -8,8 +8,8 @@ weight: 3
 enabled:
 ---
 
+{% if site.form.enabled == true %}
 <div class="text-center">
-  {% if site.form.enabled == true %}
   <h2>Want to get in touch?</h2>
   <br />
   <p>
@@ -169,5 +169,5 @@ enabled:
   </fieldset>
   {% else %}
   <!-- Contact form is disabled -->
-  {% endif %}
 </div>
+{% endif %}
