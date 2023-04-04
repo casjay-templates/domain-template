@@ -274,6 +274,7 @@ plugins:
   - jekyll-menus
   - jekyll-remote-theme
   - jekyll-tidy
+  - casjaysdev-jekyll-theme
 
 # Include folders and files
 include:
