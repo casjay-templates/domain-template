@@ -1,5 +1,5 @@
 {% if site.share-this.enabled.footer == true %}
-<div class="share-buttons" align="center">
+<div class="share-buttons">
   {% if site.share-this.rss %}
   <a href="{{ site.feed.path | prepend: site.baseurl }} ">
     <img
@@ -26,7 +26,7 @@
   <br />
   {% if site.share-this.enabled.script == true %}
   <div
-    class="container"
+    class="container-fluid"
     style="width: 20%; margin: 0 auto; columns: auto; text-align: center"
     align="center"
   >
@@ -38,8 +38,8 @@
     ></script>
   </div>
   {% endif %}
+  <br />
+  {% else %}
+  <!-- Share-this is disabled -->
 </div>
-<br />
-{% else %}
-<!-- Share-this is disabled -->
 {% endif %}
