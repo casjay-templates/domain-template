@@ -269,6 +269,7 @@ jekyll_tidy:
 plugins:
   - jemoji
   - kramdown
+  - github-pages
   - jekyll-avatar
   - jekyll-feed
   - jekyll-mentions
@@ -277,12 +278,14 @@ plugins:
   - jekyll-gist
   - jekyll-coffeescript
   - jekyll-assets
-  - domain-templatemap
   - jekyll-analytics
   - jekyll-remote-include
   - jekyll-menus
   - jekyll-remote-theme
   - jekyll-tidy
+  - jekyll-theme-hacker
+  - casjaysdev-jekyll-theme
+  - domain-templatemap
 
 # Include folders and files
 include:
