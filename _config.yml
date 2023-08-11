@@ -19,7 +19,7 @@ baseurl: ""
 # set site author
 author:
   name: CasjaysDev
-  site: http://casjay.net
+  site: http://casjay.pro
 
 # set gallery image url
 gallery:
@@ -43,8 +43,8 @@ form:
     submit_url: "https://formspree.io/f"
     code: "xknqkpjo"
   formmail:
-    submit_url: "https://cgi.casjay.net/sendmail.cgi"
-    recipient: "form-submission@casjay.net"
+    submit_url: "https://cgi.casjay.pro/sendmail.cgi"
+    recipient: "form-submission@casjay.pro"
     subject: "domain-template Contact Form"
     title: "domain-template"
     env: "REMOTE_HOST,HTTP_USER_AGENT"
@@ -57,7 +57,7 @@ form:
       message: "Message"
       required: "Name,Email,Message"
     theme:
-      background: "https://casjaysdev-sites.github.io/static.casjay.net/assets/images/bkg.png"
+      background: "https://casjaysdev-sites.github.io/static.casjay.pro/assets/images/bkg.png"
       bgcolor: "#000000"
       text_color: "#ffffff"
       link_color: "#ffffff"
