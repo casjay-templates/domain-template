@@ -1,30 +1,28 @@
 {% if site.eucookie.enabled == true %}
-<div class="text-center align-items-center fs-3">
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-  <script>
-    window.cookieconsent.initialise({
-      palette: {
-        popup: {
-          background: '#64386b',
-          text: '#ffcdfd',
-        },
-        button: {
-          background: '#f8a8ff',
-          text: '#3f0045',
-        },
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+  window.cookieconsent.initialise({
+    palette: {
+      popup: {
+        background: '#64386b',
+        text: '#ffcdfd',
       },
-      theme: '{{ site.eu.cookie.theme }}',
-      content: {
-        message: '{{ site.eu.cookie.message }}',
-        dismiss: '{{ site.eu.cookie.dismiss }}',
-        link: '{{ site.eu.cookie.link_text }}',
-        href: '{{ site.eu.cookie.link_url }}',
+      button: {
+        background: '#f8a8ff',
+        text: '#3f0045',
       },
-    });
-  </script>
-  <br />
-</div>
-  {% else %}
+    },
+    theme: '{{ site.eu.cookie.theme }}',
+    content: {
+      message: '{{ site.eu.cookie.message }}',
+      dismiss: '{{ site.eu.cookie.dismiss }}',
+      link: '{{ site.eu.cookie.link_text }}',
+      href: '{{ site.eu.cookie.link_url }}',
+    },
+  });
+</script>
+<br />
+{% else %}
   <!-- eu cookie is disabled -->
 </div>
 {% endif %}
