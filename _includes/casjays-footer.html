@@ -4,16 +4,6 @@
     <br />
     <br />
     <br />
-    <!-- Begin last updated -->
-    {% if site.options.last_updated == true %}
-    <span style="color: skyblue">
-      Last update on: {{ site.time | date: '%B %d, %Y at %H:%M' }}
-    </span>
-    <br />
-    <br />
-    {% endif %}
-    <!-- End last updated -->
-
     <!-- Social Links -->
     {% if site.options.sharethis == true %} {% include casjaysdev/sharethis.html
     %} {% endif %}
@@ -48,6 +38,16 @@
     {% if site.options.ads == true %} {% include casjaysdev/ads.html %} {% endif
     %}
     <!-- End ads Code -->
+
+    <!-- Begin last updated -->
+    {% if site.options.last_updated == true %}
+    <span style="color: skyblue">
+      Last update on: {{ site.time | date: '%B %d, %Y at %H:%M' }}
+    </span>
+    <br />
+    <br />
+    {% endif %}
+    <!-- End last updated -->
 
     <!-- Begin EU compliant -->
     {% if site.options.eucookie == true %} {% include casjaysdev/eucookie.html
